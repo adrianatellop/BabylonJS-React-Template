@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { VIEW } from '../config/redux/constants/view';
 import { setView } from "../config/redux/slices/appSlice";
 import BabylonCanvas from "./BabylonCanvas";
-import CesiumCanvas from "./CesiumCanvas";
 import AuthExample from "./AuthExample";
 
 import illustration from "../assets/images/undraw_engineering_team_a7n2.svg";
@@ -93,7 +92,6 @@ const Home = () => {
             case VIEW.BABYLON:
                 return <BabylonCanvas />
             case VIEW.CESIUM:
-                return <CesiumCanvas />
             case VIEW.AUTH:
                 return <AuthExample />
             default:
